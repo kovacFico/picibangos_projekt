@@ -36,7 +36,7 @@ def get_team(id: int, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Team with id: {id} doesn't exist.",
+            detail=f"Team with id: {id} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -45,7 +45,7 @@ def get_team(id: int, db: Session = Depends(get_db)):
 
 
 @router.post("/create_team", response_model=team_schema.Team)
-def create_event(
+def create_team(
     user_name: str, team: team_schema.TeamCreate, db: Session = Depends(get_db)
 ):
     """Function which represents POST endpoint for creating new team.
@@ -62,6 +62,7 @@ def create_event(
     """
 
     try:
+        team.member_names.append(user_name)
         db_team = Team(**team.dict())
         db_team.created_by = user_name
         db.add(db_team)
@@ -99,18 +100,19 @@ def update_team(
         if user_name != db_team.created_by:
             raise NotTeamAdmin
 
-        updated_team = Team(**team.dict())
-        updated_team.created_by = db_team.created_by
-        updated_team.team_id = db_team.team_id
+        for k, v in team.__dict__.items():
+            if v:
+                setattr(db_team, k, v)
 
-        db.add(updated_team)
+        db.add(db_team)
         db.commit()
-        return updated_team
+        db.refresh(db_team)
+        return db_team
 
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Team with id: {id} doesn't exist.",
+            detail=f"Team with id: {id} doesn't exist.",
         )
     except NotTeamAdmin as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)
@@ -138,13 +140,13 @@ def delete_team(id: int, user_name: str, db: Session = Depends(get_db)):
 
     try:
         db_team = db.query(Team).filter(Team.team_id == id)
-        if user_name != db_team.__dict__["created_by"]:
-            raise NotTeamAdmin
 
         # razlog za ovo je taj sto ako nije naslo nista da digne exception, a nismo to gore stavili
         # jer onda db_team nebi bio referenca na objekt baze, nego zaista objekt baze i kao takav
         # nebi imao delete() funkciju koristenu dole
-        db_team.one()
+        if user_name != db_team.one().created_by:
+            raise NotTeamAdmin
+
         db_team.delete()
         db.commit()
 
@@ -153,7 +155,7 @@ def delete_team(id: int, user_name: str, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Team with id: {id} doesn't exist.",
+            detail=f"Team with id: {id} doesn't exist.",
         )
     except NotTeamAdmin as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)

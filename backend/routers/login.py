@@ -34,4 +34,6 @@ def login_user(user_mail: str, user_pass: str, db: Session = Depends(get_db)):
     except WrongPassword as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)
     except Exception as e:
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e)
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e.args
+        )

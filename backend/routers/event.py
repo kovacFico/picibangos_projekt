@@ -8,6 +8,7 @@ from schemes import event_schema
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 from utils.exceptions import NotEventAdmin
+from utils.functions import calculate_event_duration
 
 
 router = APIRouter(tags=["event"])
@@ -30,13 +31,13 @@ def get_event(id: int, db: Session = Depends(get_db)):
     """
 
     try:
-        event = db.query(Event).filter(Event.even_id == id).one()
+        event = db.query(Event).filter(Event.event_id == id).one()
         return event
 
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Event with id: {id} doesn't exist.",
+            detail=f"Event with id: {id} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -64,6 +65,9 @@ def create_event(
     try:
         db_event = Event(**event.dict())
         db_event.created_by = user_name
+        db_event.duration = calculate_event_duration(
+            db_event.starts_at, db_event.ends_at
+        )
         db.add(db_event)
         db.commit()
         db.refresh(db_event)
@@ -98,22 +102,30 @@ def update_event(
     """
 
     try:
-        db_event = db.query(Event).filter(Event.even_id == id).one()
+        db_event = db.query(Event).filter(Event.event_id == id).one()
         if user_name != db_event.created_by:
             raise NotEventAdmin
 
-        updated_event = Event(**event.dict())
-        updated_event.created_by = db_event.created_by
-        updated_event.even_id = db_event.even_id
+        for k, v in event.__dict__.items():
+            if v:
+                setattr(db_event, k, v)
 
-        db.add(updated_event)
+        """db_event.event_name = event.event_name
+        db_event.starts_at = event.starts_at
+        db_event.ends_at = event.ends_at
+        db_event.attendee_names = event.attendee_names
+        db_event.team_name = event.team_name"""
+        db_event.duration = calculate_event_duration(event.starts_at, event.ends_at)
+
+        db.add(db_event)
         db.commit()
-        return updated_event
+        db.refresh(db_event)
+        return db_event
 
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Event with id: {id} doesn't exist.",
+            detail=f"Event with id: {id} doesn't exist.",
         )
     except NotEventAdmin as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)
@@ -141,13 +153,12 @@ def delete_event(id: int, user_name: str, db: Session = Depends(get_db)):
 
     try:
         db_event = db.query(Event).filter(Event.even_id == id)
-        if user_name != db_event.__dict__["created_by"]:
+        if user_name != db_event.one().created_by:
             raise NotEventAdmin
 
         # razlog za ovo je taj sto ako nije naslo nista da digne exception, a nismo to gore stavili
         # jer onda db_event nebi bio referenca na objekt baze, nego zaista objekt baze i kao takav
         # nebi imao delete() funkciju koristenu dole
-        db_event.one()
         db_event.delete()
         db.commit()
 
@@ -156,7 +167,7 @@ def delete_event(id: int, user_name: str, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Event with id: {id} doesn't exist.",
+            detail=f"Event with id: {id} doesn't exist.",
         )
     except NotEventAdmin as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)

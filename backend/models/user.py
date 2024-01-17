@@ -1,7 +1,6 @@
 from db.database import Base
 from sqlalchemy import Boolean
 from sqlalchemy import Column
-from sqlalchemy import ForeignKey
 from sqlalchemy import Integer
 from sqlalchemy import String
 from sqlalchemy.orm import relationship
@@ -16,7 +15,5 @@ class User(Base):
     hashed_password = Column(String, nullable=False)
     is_active = Column(Boolean, default=True)
     friends = Column(String, nullable=True)
-    event_id = Column(Integer, ForeignKey("events.event_id"))
-    events = relationship("Events")
-    team_id = Column(Integer, ForeignKey("teams.team_id"))
+    events = relationship("Event", back_populates="attendee")
     teams = relationship("Team", back_populates="members")

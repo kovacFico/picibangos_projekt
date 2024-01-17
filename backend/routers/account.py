@@ -36,7 +36,7 @@ def get_account(id: int, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="User with id: {id} doesn't exist.",
+            detail=f"User with id: {id} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -65,23 +65,29 @@ def update_account(
 
     try:
         db_user = db.query(User).filter(User.user_id == id).one()
-        # koncept je malo zbunjujuci zbog davanih imena, ali ukratko ovaj kod provjerava
-        # jeli ista sifra koja je bila u bazi i koju je sada user (mozda) promjenio
-        # ako je ista, ne odvrti se ovo u if-u tj. ne radi nista, a ako nije ista onda hasiraj
-        # ovu novu sifru i spremi je pod parametar hashed_password
-        if not Hasher.verify_password(user.hashed_password, db_user.hashed_password):
-            user.hashed_password = Hasher.get_password_hash(user.hashed_password)
+        breakpoint()
+        for k, v in user.__dict__.items():
+            if k == "hashed_password" and v:
+                setattr(db_user, k, Hasher.get_password_hash(v))
+                continue
+            if v:
+                setattr(db_user, k, v)
+        """db_user.user_name = user.user_name
+        db_user.email = user.email
+        db_user.hashed_password = Hasher.get_password_hash(user.hashed_password)
+        db_user.events = user.events
+        db_user.friends = user.friends
+        db_user.teams = user.teams"""
 
-        updated_user = User(**user.dict())
-        updated_user.user_id = db_user.user_id
-        db.add(updated_user)
+        db.add(db_user)
         db.commit()
-        return updated_user
+        db.refresh(db_user)
+        return db_user
 
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="User with id: {id} doesn't exist.",
+            detail=f"User with id: {id} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -120,7 +126,7 @@ def delete_account(id: int, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="User with id: {id} doesn't exist.",
+            detail=f"User with id: {id} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(

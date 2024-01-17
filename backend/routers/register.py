@@ -30,7 +30,6 @@ def create_user(user: user_schema.UserCreate, db: Session = Depends(get_db)):
 
     try:
         user.hashed_password = Hasher.get_password_hash(user.hashed_password)
-
         db_user = User(**user.dict())
         db.add(db_user)
         db.commit()
