@@ -5,15 +5,17 @@ from fastapi import HTTPException
 from fastapi import status
 from models.team import Team
 from schemes import team_schema
+from sqlalchemy.orm import joinedload
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 from utils.exceptions import NotTeamAdmin
+from utils.functions import changing_user_names_to_user_model
 
 
 router = APIRouter(tags=["team"])
 
 
-@router.get("/team/{id}", response_model=team_schema.Team)
+@router.get("/team/{id}", response_model=team_schema.TeamMembersEvents)
 def get_team(id: int, db: Session = Depends(get_db)):
     """Function which represents GET endpoint for retriving team details.
 
@@ -30,7 +32,13 @@ def get_team(id: int, db: Session = Depends(get_db)):
     """
 
     try:
-        team = db.query(Team).filter(Team.team_id == id).one()
+        team = (
+            db.query(Team)
+            .options(joinedload(Team.members))
+            .options(joinedload(Team.events))
+            .where(Team.team_id == id)
+            .one()
+        )
         return team
 
     except NoResultFound:
@@ -44,7 +52,7 @@ def get_team(id: int, db: Session = Depends(get_db)):
         )
 
 
-@router.post("/create_team", response_model=team_schema.Team)
+@router.post("/create_team", response_model=team_schema.TeamMembersEvents)
 def create_team(
     user_name: str, team: team_schema.TeamCreate, db: Session = Depends(get_db)
 ):
@@ -62,14 +70,29 @@ def create_team(
     """
 
     try:
-        team.member_names.append(user_name)
-        db_team = Team(**team.dict())
+        team.members.append(user_name)
+
+        team_dict = team.dict()
+        user_names = team_dict.pop("members")
+        members = changing_user_names_to_user_model(user_names)
+
+        db_team = Team(**team_dict)
         db_team.created_by = user_name
         db.add(db_team)
         db.commit()
-        db.refresh(db_team)
+        db.refresh(db_team, ["members"])
+
+        for member in members:
+            db_team.members.append(member)
+
+        db.commit()
         return db_team
 
+    except NoResultFound:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with user name: {user_name} doesn't exist.",
+        )
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e.args

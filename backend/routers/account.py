@@ -6,6 +6,7 @@ from fastapi import HTTPException
 from fastapi import status
 from models.user import User
 from schemes import user_schema
+from sqlalchemy.orm import joinedload
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 
@@ -13,12 +14,12 @@ from sqlalchemy.orm.exc import NoResultFound
 router = APIRouter(tags=["account"])
 
 
-@router.get("/account/{id}", response_model=user_schema.User)
-def get_account(id: int, db: Session = Depends(get_db)):
+@router.get("/account/{user_name}", response_model=user_schema.UserTeamsEvents)
+def get_account(user_name: str, db: Session = Depends(get_db)):
     """Function which represents GET endpoint for retriving user's account details.
 
     Args:
-        id (int): User's id.
+        name (str): User name.
         db (Session, optional): Database session. Defaults to Depends(get_db).
 
     Raises:
@@ -30,7 +31,13 @@ def get_account(id: int, db: Session = Depends(get_db)):
     """
 
     try:
-        user = db.query(User).filter(User.user_id == id).one()
+        user = (
+            db.query(User)
+            .options(joinedload(User.teams))
+            .options(joinedload(User.events))
+            .where(User.user_name == user_name)
+            .one()
+        )
         return user
 
     except NoResultFound:
@@ -65,7 +72,6 @@ def update_account(
 
     try:
         db_user = db.query(User).filter(User.user_id == id).one()
-        breakpoint()
         for k, v in user.__dict__.items():
             if k == "hashed_password" and v:
                 setattr(db_user, k, Hasher.get_password_hash(v))

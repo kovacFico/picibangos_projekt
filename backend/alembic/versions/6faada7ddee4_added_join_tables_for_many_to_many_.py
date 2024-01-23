@@ -1,8 +1,8 @@
-"""new base configuration entirely
+"""added join_tables for many to many relations, new base
 
-Revision ID: 0753228fd1bf
+Revision ID: 6faada7ddee4
 Revises:
-Create Date: 2024-01-07 15:03:47.880119
+Create Date: 2024-01-23 00:16:06.363375
 
 """
 import sqlalchemy as sa
@@ -10,7 +10,7 @@ from alembic import op
 
 
 # revision identifiers, used by Alembic.
-revision = "0753228fd1bf"
+revision = "6faada7ddee4"
 down_revision = None
 branch_labels = None
 depends_on = None

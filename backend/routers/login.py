@@ -6,6 +6,7 @@ from fastapi import HTTPException
 from fastapi import status
 from models.user import User
 from schemes import user_schema
+from sqlalchemy.orm import selectinload
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 from utils.exceptions import WrongPassword
@@ -20,10 +21,16 @@ def get_user():
 
 
 @router.post("/login", response_model=user_schema.User)
-def login_user(user_mail: str, user_pass: str, db: Session = Depends(get_db)):
+def login_user(user_name: str, user_pass: str, db: Session = Depends(get_db)):
 
     try:
-        user = db.query(User).filter(User.email == user_mail).one()
+        user = (
+            db.query(User)
+            .filter(User.email == user_name)
+            .options(selectinload(User.teams))
+            .options(selectinload(User.events))
+            .one()
+        )
         if Hasher.verify_password(user_pass, user.hashed_password):
             return user
         else:

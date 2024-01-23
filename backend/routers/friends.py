@@ -31,7 +31,10 @@ def get_friends(id: int, db: Session = Depends(get_db)):
 
     try:
         user = db.query(User).filter(User.user_id == id).one()
-        return user.friends.replace("{", "").replace("}", "").split(",")
+        if user.friends:
+            return user.friends.replace("{", "").replace("}", "").split(",")
+        else:
+            return {"User doesn't have any friends :("}
 
     except NoResultFound:
         raise HTTPException(
@@ -67,7 +70,10 @@ def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_d
         db.add(db_user)
         db.commit()
         db.refresh(db_user)
-        return db_user.friends.replace("{", "").replace("}", "").split(",")
+        if friends:
+            return db_user.friends.replace("{", "").replace("}", "").split(",")
+        else:
+            return {"User doesn't have any friends :("}
 
     except NoResultFound:
         raise HTTPException(

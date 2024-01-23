@@ -36,6 +36,9 @@ class User(UserBase):
     user_id: int
     is_active: bool
     friends: list[str] | None
+
+
+class UserTeamsEvents(User):
     teams: list[Team] | None
     events: list[Event] | None
 
@@ -54,7 +57,7 @@ class User(UserBase):
         """
 
         user = vars(db_user)
-        breakpoint()
+
         if user["friends"]:
             user["friends"] = user["friends"].replace("{", "")
             user["friends"] = user["friends"].replace("}", "")

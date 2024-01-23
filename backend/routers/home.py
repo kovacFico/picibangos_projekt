@@ -4,6 +4,7 @@ from fastapi import Depends
 from fastapi import HTTPException
 from models.user import User
 from schemes import user_schema
+from sqlalchemy.orm import joinedload
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 
@@ -11,11 +12,16 @@ from sqlalchemy.orm.exc import NoResultFound
 router = APIRouter()
 
 
-@router.get("/home", response_model=user_schema.User)
-async def get_user(user_mail: str, db: Session = Depends(get_db)):
+@router.get("/users", response_model=list[user_schema.UserTeamsEvents])
+async def get_all_users(db: Session = Depends(get_db)):
 
     try:
-        user = db.query(User).filter(User.email == user_mail).one()
+        user = (
+            db.query(User)
+            .options(joinedload(User.teams))
+            .options(joinedload(User.events))
+            .all()
+        )
         return user
 
     except NoResultFound:

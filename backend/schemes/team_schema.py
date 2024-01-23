@@ -1,6 +1,10 @@
+from datetime import datetime
+from typing import Optional
+
 from db.database import db_session
 from models.user import User
 from pydantic import BaseModel
+from pydantic import EmailStr
 from pydantic import validator
 from sqlalchemy.orm import load_only
 
@@ -11,13 +15,15 @@ class TeamBase(BaseModel):
 
     class Config:
         orm_mode = True
+        allow_population_by_field_name = True
 
 
 class TeamCreate(TeamBase):
-    member_names: list[str] = []
+    members: Optional[list] = []
 
-    @validator("member_names")
-    def validate_member_names(cls, member_names: list):
+    @validator("members")
+    def validate_members(cls, members: list):
+        # mozda NIJE POTREBNO jer ce se na frontendu ponuditi samo oni koji postoje
         with db_session() as db:
             db_user_names = (
                 db.query(User).options(load_only(getattr(User, "user_name"))).all()
@@ -27,16 +33,42 @@ class TeamCreate(TeamBase):
         for db_user in db_user_names:
             user_names.append(db_user.user_name)
 
-        for member_name in member_names:
+        for member_name in members:
             if member_name not in user_names:
                 raise ValueError(f"Member: {member_name} doesn't exist.")
 
-        return member_names
+        return members
 
 
-class Team(TeamCreate):
+class Team(TeamBase):
     team_id: int
     created_by: str
+
+
+class Member(BaseModel):
+    user_name: str
+    email: EmailStr
+    is_active: bool
+
+    class Config:
+        orm_mode = True
+
+
+class EventInfo(BaseModel):
+    event_id: int
+    event_name: str
+    starts_at: datetime
+    ends_at: datetime
+    duration: int
+    created_by: str
+
+    class Config:
+        orm_mode = True
+
+
+class TeamMembersEvents(Team):
+    members: list[Member] = []
+    events: list[EventInfo] = []
 
     @classmethod
     def from_orm(cls, db_team):
@@ -53,7 +85,4 @@ class Team(TeamCreate):
         """
 
         team = vars(db_team)
-        team["member_names"] = team["member_names"].replace("{", "")
-        team["member_names"] = team["member_names"].replace("}", "")
-        team["member_names"] = team["member_names"].split(",")
         return cls(**team)

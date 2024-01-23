@@ -5,16 +5,19 @@ from fastapi import HTTPException
 from fastapi import status
 from models.event import Event
 from schemes import event_schema
+from sqlalchemy.orm import joinedload
 from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 from utils.exceptions import NotEventAdmin
 from utils.functions import calculate_event_duration
+from utils.functions import changing_team_names_to_team_model
+from utils.functions import changing_user_names_to_user_model
 
 
 router = APIRouter(tags=["event"])
 
 
-@router.get("/event/{id}", response_model=event_schema.Event)
+@router.get("/event/{id}", response_model=event_schema.EventAttendeesTeams)
 def get_event(id: int, db: Session = Depends(get_db)):
     """Function which represents GET endpoint for retriving event details.
 
@@ -31,7 +34,13 @@ def get_event(id: int, db: Session = Depends(get_db)):
     """
 
     try:
-        event = db.query(Event).filter(Event.event_id == id).one()
+        event = (
+            db.query(Event)
+            .options(joinedload(Event.attendees))
+            .options(joinedload(Event.teams))
+            .where(Event.event_id == id)
+            .one()
+        )
         return event
 
     except NoResultFound:
@@ -45,7 +54,7 @@ def get_event(id: int, db: Session = Depends(get_db)):
         )
 
 
-@router.post("/create_event", response_model=event_schema.Event)
+@router.post("/create_event", response_model=event_schema.EventAttendeesTeams)
 def create_event(
     user_name: str, event: event_schema.EventCreate, db: Session = Depends(get_db)
 ):
@@ -63,14 +72,34 @@ def create_event(
     """
 
     try:
-        db_event = Event(**event.dict())
+        event.attendees.append(user_name)
+        breakpoint()
+        event_dict = event.dict()
+        user_names = event_dict.pop("attendees")
+        team_names = event_dict.pop("teams")
+        attendees = changing_user_names_to_user_model(user_names)
+        teams = changing_team_names_to_team_model(team_names)
+
+        db_event = Event(**event_dict)
         db_event.created_by = user_name
         db_event.duration = calculate_event_duration(
             db_event.starts_at, db_event.ends_at
         )
         db.add(db_event)
         db.commit()
-        db.refresh(db_event)
+        db.refresh(db_event, ["attendees", "teams"])
+
+        # posto user kada stvara event moze navesti ili samo atendees ili samo teams
+        # pa treba nam if petlja za provjeru
+        if user_names:
+            for attende in attendees:
+                db_event.attendees.append(attende)
+        if team_names:
+            for team in teams:
+                db_event.teams.append(team)
+        if user_names or team_names:
+            db.commit()
+
         return db_event
 
     except Exception as e:
