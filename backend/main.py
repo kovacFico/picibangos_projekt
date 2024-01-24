@@ -11,7 +11,6 @@ from fastapi.responses import JSONResponse
 from routers import account
 from routers import event
 from routers import friends
-from routers import home
 from routers import login
 from routers import register
 from routers import team
@@ -25,7 +24,6 @@ logger = logging.getLogger(__name__)
 
 app.include_router(account.router)
 app.include_router(event.router)
-app.include_router(home.router)
 app.include_router(login.router)
 app.include_router(register.router)
 app.include_router(team.router)

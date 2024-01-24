@@ -12,21 +12,20 @@ from sqlalchemy.orm import Session
 router = APIRouter(tags=["register"])
 
 
-@router.get("/register")
-def get_form():
-    return {
-        "OVDJE IDE ONA FORM TABLICA ZA REGISTRACIJU       \n",
-        "Registracija form:                               \n",
-        "name: Momcilo                                    \n",
-        "mail: govedjimediji@mail.hr                      \n",
-        "password: ********                               \n",
-        "                                                 \n",
-        "                                    CREATE DUGME \n",
-    }
-
-
 @router.post("/register", response_model=user_schema.User)
 def create_user(user: user_schema.UserCreate, db: Session = Depends(get_db)):
+    """Function for registering new user.
+
+    Args:
+        user (user_schema.UserCreate): Pydantic schema with new user details.
+        db (Session, optional): Database session. Defaults to Depends(get_db).
+
+    Raises:
+        HTTPException: General exception.
+
+    Returns:
+        user (model): Pydantic schema with new user details.
+    """
 
     try:
         user.hashed_password = Hasher.get_password_hash(user.hashed_password)

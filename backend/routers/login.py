@@ -15,18 +15,28 @@ from utils.exceptions import WrongPassword
 router = APIRouter(tags=["login"])
 
 
-@router.get("/login")
-def get_user():
-    return {"OVDJE IDE ONA FORM TABLICA ZA LOGIRANJE"}
-
-
-@router.post("/login", response_model=user_schema.User)
+@router.post("/login", response_model=user_schema.UserTeamsEvents)
 def login_user(user_name: str, user_pass: str, db: Session = Depends(get_db)):
+    """Function for logging user into his account.
+
+    Args:
+        user_name (str): User's name.
+        user_pass (str): User's password.
+        db (Session, optional): Database session. Defaults to Depends(get_db).
+
+    Raises:
+        WrongPassword: Exception raised when user enters wrong password.
+        HTTPException: NoResultFound raised when user enters non existant/wrong user name.
+        HTTPException: General exception.
+
+    Returns:
+        user (model): Pydantic schema with user's account details.
+    """
 
     try:
         user = (
             db.query(User)
-            .filter(User.email == user_name)
+            .filter(User.user_name == user_name)
             .options(selectinload(User.teams))
             .options(selectinload(User.events))
             .one()
@@ -37,7 +47,9 @@ def login_user(user_name: str, user_pass: str, db: Session = Depends(get_db)):
             raise WrongPassword
 
     except NoResultFound:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Wrong mail")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Wrong user name."
+        )
     except WrongPassword as e:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=e.msg)
     except Exception as e:

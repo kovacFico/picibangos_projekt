@@ -15,7 +15,7 @@ router = APIRouter(tags=["friends"])
 
 @router.get("/user/{id}/friends", response_model=List[str] | None)
 def get_friends(id: int, db: Session = Depends(get_db)):
-    """Function which represents GET endpoint for retriving user's account details.
+    """Function which represents GET endpoint for retriving user's friends.
 
     Args:
         id (int): User's id.
@@ -26,7 +26,7 @@ def get_friends(id: int, db: Session = Depends(get_db)):
         HTTPException: General Exception.
 
     Returns:
-        user (model): Pydantic schema with user's account details.
+        (list): List of user's friend.
     """
 
     try:
@@ -49,11 +49,11 @@ def get_friends(id: int, db: Session = Depends(get_db)):
 
 @router.put("/user/{id}/friends", response_model=List[str] | None)
 def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_db)):
-    """Function which represents PUT endpoint for updating user's account details.
+    """Function which represents PUT endpoint for updating user's friends.
 
     Args:
         id (int): User's id.
-        user (user_schema.UserUpdate): Pytdantic schema with user's new account details.
+        friends (list): Updated list of user's friends.
         db (Session, optional): Database session. Defaults to Depends(get_db).
 
     Raises:
@@ -61,7 +61,7 @@ def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_d
         HTTPException: General Exception.
 
     Returns:
-        user (model): Pydantic schema with user's updated account details.
+        (list): List of user's friend.
     """
 
     try:

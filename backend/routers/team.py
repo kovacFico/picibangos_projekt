@@ -84,8 +84,9 @@ def create_team(
 
         for member in members:
             db_team.members.append(member)
-
         db.commit()
+        db.refresh(db_team)
+
         return db_team
 
     except NoResultFound:

@@ -11,7 +11,34 @@ from sqlalchemy.orm import Session
 from sqlalchemy.orm.exc import NoResultFound
 
 
-router = APIRouter(tags=["account"])
+router = APIRouter(tags=["user"])
+
+
+@router.get("/users", response_model=list[user_schema.UserTeamsEvents])
+def get_all_users(db: Session = Depends(get_db)):
+    """Function that represents GET endpoint for retriving all user's details.
+
+    Args:
+        db (Session, optional): Database session. Defaults to Depends(get_db).
+
+    Raises:
+        HTTPException: General Exception.
+
+    Returns:
+        users (list): List of pydantic schemas with all user's details.
+    """
+
+    try:
+        users = (
+            db.query(User)
+            .options(joinedload(User.teams))
+            .options(joinedload(User.events))
+            .all()
+        )
+        return users
+
+    except NoResultFound:
+        raise HTTPException(status_code=404, detail="Wrong mail or password")
 
 
 @router.get("/account/{user_name}", response_model=user_schema.UserTeamsEvents)
@@ -51,7 +78,7 @@ def get_account(user_name: str, db: Session = Depends(get_db)):
         )
 
 
-@router.put("/account/{id}", response_model=user_schema.User)
+@router.put("/account/{id}", response_model=user_schema.UserTeamsEvents)
 def update_account(
     id: int, user: user_schema.UserUpdate, db: Session = Depends(get_db)
 ):
@@ -78,12 +105,6 @@ def update_account(
                 continue
             if v:
                 setattr(db_user, k, v)
-        """db_user.user_name = user.user_name
-        db_user.email = user.email
-        db_user.hashed_password = Hasher.get_password_hash(user.hashed_password)
-        db_user.events = user.events
-        db_user.friends = user.friends
-        db_user.teams = user.teams"""
 
         db.add(db_user)
         db.commit()

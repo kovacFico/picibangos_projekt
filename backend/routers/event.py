@@ -73,7 +73,6 @@ def create_event(
 
     try:
         event.attendees.append(user_name)
-        breakpoint()
         event_dict = event.dict()
         user_names = event_dict.pop("attendees")
         team_names = event_dict.pop("teams")
@@ -99,6 +98,7 @@ def create_event(
                 db_event.teams.append(team)
         if user_names or team_names:
             db.commit()
+            db.refresh(db_event)
 
         return db_event
 
@@ -139,11 +139,6 @@ def update_event(
             if v:
                 setattr(db_event, k, v)
 
-        """db_event.event_name = event.event_name
-        db_event.starts_at = event.starts_at
-        db_event.ends_at = event.ends_at
-        db_event.attendee_names = event.attendee_names
-        db_event.team_name = event.team_name"""
         db_event.duration = calculate_event_duration(event.starts_at, event.ends_at)
 
         db.add(db_event)
@@ -181,7 +176,7 @@ def delete_event(id: int, user_name: str, db: Session = Depends(get_db)):
     """
 
     try:
-        db_event = db.query(Event).filter(Event.even_id == id)
+        db_event = db.query(Event).filter(Event.event_id == id)
         if user_name != db_event.one().created_by:
             raise NotEventAdmin
 

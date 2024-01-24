@@ -67,13 +67,13 @@ def changing_team_names_to_team_model(teams: list):
 
 
 def get_names_from_list_of_models(db_objects: list[object]):
-    """Function which returns
+    """Function which returns list of names when given list of objects.
 
     Args:
-        db_object (object): _description_
+        db_objects (object): List of database objects.
 
     Returns:
-        _type_: _description_
+        names (list): List of names of the individual objects.
     """
 
     names = []
