@@ -85,7 +85,9 @@ def create_team(
         for member in members:
             db_team.members.append(member)
         db.commit()
-        db.refresh(db_team)
+        db.refresh(
+            db_team, ["team_name", "description", "team_id", "created_by", "members"]
+        )
 
         return db_team
 

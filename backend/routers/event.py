@@ -98,8 +98,20 @@ def create_event(
                 db_event.teams.append(team)
         if user_names or team_names:
             db.commit()
-            db.refresh(db_event)
 
+        db.refresh(
+            db_event,
+            [
+                "event_name",
+                "starts_at",
+                "ends_at",
+                "event_id",
+                "duration",
+                "created_by",
+                "attendees",
+                "teams",
+            ],
+        )
         return db_event
 
     except Exception as e:
