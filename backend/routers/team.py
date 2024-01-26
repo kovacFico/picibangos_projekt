@@ -15,8 +15,8 @@ from utils.functions import changing_user_names_to_user_model
 router = APIRouter(tags=["team"])
 
 
-@router.get("/team/{id}", response_model=team_schema.TeamMembersEvents)
-def get_team(id: int, db: Session = Depends(get_db)):
+@router.get("/team/{team_name}", response_model=team_schema.TeamMembersEvents)
+def get_team(team_name: str, db: Session = Depends(get_db)):
     """Function which represents GET endpoint for retriving team details.
 
     Args:
@@ -36,7 +36,7 @@ def get_team(id: int, db: Session = Depends(get_db)):
             db.query(Team)
             .options(joinedload(Team.members))
             .options(joinedload(Team.events))
-            .where(Team.team_id == id)
+            .where(Team.team_name == team_name)
             .one()
         )
         return team
@@ -44,7 +44,7 @@ def get_team(id: int, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Team with id: {id} doesn't exist.",
+            detail=f"Team with name {team_name} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -85,10 +85,8 @@ def create_team(
         for member in members:
             db_team.members.append(member)
         db.commit()
-        db.refresh(
-            db_team, ["team_name", "description", "team_id", "created_by", "members"]
-        )
-
+        
+        db.refresh(db_team, ["team_name", "description", "team_id", "created_by", "members"]) 
         return db_team
 
     except NoResultFound:

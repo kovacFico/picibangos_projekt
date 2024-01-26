@@ -13,8 +13,8 @@ from sqlalchemy.orm.exc import NoResultFound
 router = APIRouter(tags=["friends"])
 
 
-@router.get("/user/{id}/friends", response_model=List[str] | None)
-def get_friends(id: int, db: Session = Depends(get_db)):
+@router.get("/user/{user_name}/friends", response_model=List[str] | None)
+def get_friends(user_name: str, db: Session = Depends(get_db)):
     """Function which represents GET endpoint for retriving user's friends.
 
     Args:
@@ -30,7 +30,7 @@ def get_friends(id: int, db: Session = Depends(get_db)):
     """
 
     try:
-        user = db.query(User).filter(User.user_id == id).one()
+        user = db.query(User).filter(User.user_name == user_name).one()
         if user.friends:
             return user.friends.replace("{", "").replace("}", "").split(",")
         else:
@@ -39,7 +39,7 @@ def get_friends(id: int, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"User with id: {id} doesn't exist.",
+            detail=f"User with username: {user_name} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(
@@ -47,10 +47,9 @@ def get_friends(id: int, db: Session = Depends(get_db)):
         )
 
 
-@router.put("/user/{id}/friends", response_model=List[str] | None)
-def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_db)):
-    """Function which represents PUT endpoint for updating user's friends.
-
+@router.post("/user/{user_name}/friends", response_model=List[str] | None)
+def update_user_friends(user_name: str, friends: list[str], db: Session = Depends(get_db)):
+    """Function which represents PUT endpoint for updating user's friends
     Args:
         id (int): User's id.
         friends (list): Updated list of user's friends.
@@ -65,7 +64,7 @@ def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_d
     """
 
     try:
-        db_user = db.query(User).filter(User.user_id == id).one()
+        db_user = db.query(User).filter(User.user_name == user_name).one()
         db_user.friends = friends
         db.add(db_user)
         db.commit()
@@ -78,7 +77,7 @@ def update_user_friends(id: int, friends: list[str], db: Session = Depends(get_d
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"User with id: {id} doesn't exist.",
+            detail=f"User with username: {user_name} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(

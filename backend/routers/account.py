@@ -70,7 +70,7 @@ def get_account(user_name: str, db: Session = Depends(get_db)):
     except NoResultFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"User with id: {id} doesn't exist.",
+            detail=f"User with username: {user_name} doesn't exist.",
         )
     except Exception as e:
         raise HTTPException(

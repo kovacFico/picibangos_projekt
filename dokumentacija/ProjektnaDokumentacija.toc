@@ -1,10 +1,10 @@
-\babel@toc {nil}{}\relax
+\babel@toc {croatian}{}\relax 
 \contentsline {chapter}{\numberline {1}Opis projektnog zadatka}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Opis aplikacije}{4}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Specifikacija programske potpore}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}FastAPI}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Streamlit}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}BeeWare}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Programski zahtjevi}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Programski zahtjevi}{8}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Zaključak i budući rad}{9}{chapter.3}%
-\contentsline {chapter}{Popis literature}{10}{chapter*.2}%
+\contentsline {chapter}{Popis literature}{11}{chapter*.2}%
