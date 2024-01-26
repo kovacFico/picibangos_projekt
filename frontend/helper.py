@@ -193,7 +193,6 @@ def sign_up_mail_password_check(username,mail,p1, p2):
                           username + "\",\"email\": \"" + mail + 
                           "\",\"hashed_password\": \"" + hashed_password[0] +
                           "\"}")
-            print(hashed_password[0])
             st.success("You have created a new account.")
 
 
@@ -305,11 +304,11 @@ def calendar_form(username,selected_events):
                 "headerToolbar": {
                     "left": "today prev,next",
                     "center": "title",
-                    "right": "dayGridDay,dayGridWeek,dayGridMonth",#maknut week
+                    "right": "dayGridDay,dayGridWeek,dayGridMonth",
                 },
                 "initialView": "dayGridMonth",
             }
-        elif mode == "timegrid":#popravi all day
+        elif mode == "timegrid":
             calendar_options = {
                 **calendar_options,
                 "initialView": "timeGridWeek"
