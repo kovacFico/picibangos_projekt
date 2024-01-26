@@ -32,7 +32,7 @@ class UserCreate(UserBase):
         return password
 
 
-class User(UserBase):
+class User(UserCreate):
     user_id: int
     is_active: bool
     friends: list[str] | None
