@@ -2,7 +2,7 @@
 
 		\noindent\textbf{Uvod}\\
 		\\
-		Osnova projekta je bilo razviti programsku podršku za \textit{Pičibangoš}, web aplikaciju koja predstavlja online planer i nudi korisnicima opcije ugovaranja sastanaka, stvaranja evenata i timova, i online komunikaciju sa prijateljima pojedinačno ili unutar tima. Također, još jedan od zadataka je bio istražiti mogućnosti koje nudi programski jezik Python sa framework-ovima Streamlit i BeeWare u razvijanju frontend-a web aplikacije i u povezivanju sa backendom, isto tako građenim pomoću pythonovog framework-a FastAPI.\\
+		Osnova projekta je bilo razviti programsku podršku za \textit{UA Neoplanta}, web aplikaciju koja predstavlja online planer i nudi korisnicima opcije ugovaranja sastanaka, stvaranja evenata i timova, i online komunikaciju sa prijateljima pojedinačno ili unutar tima. Također, još jedan od zadataka je bio istražiti mogućnosti koje nudi programski jezik Python sa framework-ima Streamlit i BeeWare u razvijanju frontend-a web aplikacije i u povezivanju sa backendom, isto tako građenim pomoću pythonovog framework-a FastAPI.\\
 		\\
 
 
@@ -19,7 +19,7 @@
 
 		\noindent\textbf{Python}\\
 		\\
-		Python je jedan od najpopularnijih i najučinkovitijih programskih jezika koji sadrži goleme library-e i framowork-e za gotovo svaku tehničku domenu. Pythonovi framowork-ovi automatiziraju implementaciju mnogih zadataka i daju programerima dobru strukturu za razvoj aplikacija. Svaki framowork dolazi s vlastitom kolekcijom modula ili paketa koji značajno skraćuju vrijeme razvoja.\\
+		Python je jedan od najpopularnijih i najučinkovitijih programskih jezika koji sadrži goleme library-e i framowork-e za gotovo svaku tehničku domenu. Pythonovi framowork-i automatiziraju implementaciju mnogih zadataka i daju programerima dobru strukturu za razvoj aplikacija. Svaki framowork dolazi s vlastitom kolekcijom modula ili paketa koji značajno skraćuju vrijeme razvoja.\\
 		\pagebreak
 
 		\noindent\textbf{Model razvoja}\\
@@ -27,10 +27,7 @@
 		Životni ciklus razvoja aplikacija daje proces kojim se aplikacije razvijaju, a modeli
 		razvoja aplikacija daju pristup provedbi tog procesa. Ti modeli opisuju kako se sve faze
 		životnog ciklusa procesa razvoja softvera spajaju u softverski projekt. Postoji nekoliko
-		uobičajenih popularnih modela razvoja i stotine, ako ne i tisuće, njihovih iteracija. Model
-		razvoja softvera opisuje što će se raditi ali ostavlja puno prostora načinu kako će se raditi.
-		Potrebno je odabrati odgovarajući model ovisno o veličini projekta. Za male projekte je vodopadni model
-		bez dodatne dokumentacije i bez restrikcija iterativnog pristupa dobar izbor, te smo u ovom projektu odlučili taj i koristiti.
+		uobičajenih popularnih modela razvoja i stotine, ako ne i tisuće, njihovih iteracija. Model razvoja softvera opisuje što će se raditi, ali ostavlja puno prostora načinu kako će se raditi. Potrebno je stoga odabrati odgovarajući model ovisno o veličini projekta. Za male projekte je vodopadni model bez dodatne dokumentacije i bez restrikcija iterativnog pristupa dobar izbor, te smo u ovom projektu odlučili taj i koristiti.
 		\pagebreak
 
 		\section{Opis aplikacije}
@@ -39,16 +36,16 @@
 
 		\noindent\textbf{Uvod}\\
 		\\
-		Aplikacija Pičibangoš je osmišljena kao planer gdje korisnik ima opciju ugovarati sastanke i događaje, bilo privatne ili poslovne svrhe, te na taj način voditi evidenciju obaveza i događaja. Također aplikacija nudi opciju i povezivanja, te komuniciranja se sa kolegama, pri čemu korisnik na taj način može vidjeti obaveze kolega s kojima je povezan ili kao prijatelj ili preko tima, te time može lakše upravljati i dogovarati događaje koji se tiču više ljudi. Stoga, cilj aplikacije ja olakšati svakodnevnu \\ komunikaciju i suradnju sa kolegama i prijateljima, te time uštediti vrijeme koje bi se neizbježno izgubilo pri dogovaranju sastanaka kroz raspitivanje o obavezama pojedinaca.  \\
+		Aplikacija UA Neoplanta je osmišljena kao online planer gdje korisnik ima opciju ugovarati sastanke i događaje, bilo privatne ili poslovne svrhe, te na taj način voditi evidenciju obaveza i događaja. Također aplikacija nudi opciju i povezivanja, te komuniciranja se sa kolegama, pri čemu korisnik na taj način može vidjeti obaveze kolega s kojima je povezan ili kao prijatelj ili preko tima, te tako može lakše upravljati i dogovarati događaje koji se tiču više ljudi. Ukratko, cilj aplikacije ja olakšati svakodnevnu komunikaciju i suradnju sa kolegama i prijateljima, te time uštediti vrijeme koje bi se neizbježno izgubilo pri dogovaranju sastanaka kroz raspitivanje o obavezama pojedinaca.  \\
 		\\
 
 		\noindent\textbf{Korištenje aplikacije}\\
 		\\
 		Nakon svake uspješne prijave korisnik dobiva pregled svih svojih obaveza koje ima unutar bilo kojeg tima, kao i obaveza koje ima sa pojedinačnim korisnicima na osobnom kalendaru. Iznad kalendara su mu također ponuđene mogućnosti stvaranja novih događaja, timova ili pronalaženja novih prijatelja.  \\
 		\\
-		Pri odabiru jednog od timova u koje korisnik uključen, kalendar se prilagođava te preciznije prikazuje obaveze koje korisnik ima unutar tima, kao i obaveze koje imaju njegovi timljani. Na taj način korisnik može preciznije odabrati vrijeme u kojem bi mogao kreirati novi događaj, a kojem bi mogli prisustvovati svi timljani. Također korisnik može predložiti jednog od svojih prijatelja ko novog timljana, što odobrava admin koji je stvorio tim, te na temelju toga se i kalendar ažurira.\\
+		Pri odabiru jednog od timova u koje korisnik uključen, kalendar se prilagođava te preciznije prikazuje obaveze koje korisnik ima unutar tima, kao i obaveze koje imaju njegovi timljani. Na taj način korisnik može preciznije odabrati vrijeme u kojem bi mogao kreirati novi događaj, a u kojem bi mogli prisustvovati svi timljani. Također korisnik može predložiti jednog od svojih prijatelja kao novog timljana, što odobrava admin koji je stvorio tim, te se na temelju toga i kalendar ažurira.\\
 		\\
-		Korisnik pri stvaranju novog događaja daje ime događaja, odabire vrijeme u kojem će se spomenuti događaj odvijati i sudionike koje poziva na događaj, bilo pojedinačno navedene ili kroz navođenje timova u kojima su oni prisutni, a korisnik je isto tako sudionik. \\
+		Korisnik pri stvaranju novog događaja daje ime događaja, odabire vrijeme u kojem će se spomenuti događaj odvijati i sudionike koje poziva na događaj, bilo pojedinačno navedene ili kroz navođenje timova u kojima su oni prisutni, a u kojima je korisnik isto tako sudionik. \\
 		\pagebreak
 
 		Pri stvaranju novih timova, korisnik navodi ime tima, njegov opis te odabire prijatelje sa kojima želi stvoriti navedeni tim.\\

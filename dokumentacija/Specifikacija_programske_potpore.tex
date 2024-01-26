@@ -1,6 +1,6 @@
 \chapter{Specifikacija programske potpore}
 	Python framework je zbirka Python modula koja pruža skup zajedničkih funkcija koje se mogu koristiti kao struktura za izgradnju aplikacija bilo koje vrste.\\
-	Framework-ovi su osmišljeni kako bi pojednostavili razvojni proces dajući općenite smjernice o tome kako bismo trebali graditi softver i apstrahirali neke od složenijih ili ponavljajućih zadataka, što stoga omogućuje jedinstvenu i prilagođenu logiku za aplikacije.\\
+	Framework-i su osmišljeni kako bi pojednostavili razvojni proces dajući općenite smjernice o tome kako bismo trebali graditi softver i apstrahirali neke od složenijih ili ponavljajućih zadataka, što stoga omogućuje jedinstvenu i prilagođenu logiku za aplikacije.\\
 	\\
 	Stoga, nakon istraživanja, odlučili smo koristiti navedene Python framework-e u izgradnji aplikacije:
 
@@ -16,8 +16,17 @@
 
 	\section{FastAPI}
 
-	FastAPI je moderan web framework koji je kreirao Sebastián Ramírez za izgradnju RESTful API-ja u Pythonu. Ubrzo je stekao popularnost među programerima zbog svoje jednostavne upotrebe, brzine koja je usporediva sa NodeJS-om i Go-om, i robusnosti. Temelj se zasniva na Pydantic-u, te omogućuje validaciju, serijalizaciju i deserijalizaciju podataka. Također automatski generira OpenAPI dokumentaciju za API-je izgrađene s njim.\\
-	Upravo radi navedenih razloga, FastApi je postao najbolji odabir za izgradnju backend-a aplikacije.
+	FastAPI je moderan web framework koji je kreirao Sebastián Ramírez za izgradnju RESTful API-ja u Pythonu. Ubrzo je stekao popularnost među programerima zbog svoje jednostavne upotrebe, koja je omogućila korisnicima brz proces učenja. Posljednično time je ostvarila i lakši proces kreiranja proizvoda i funkcionalnosti, čime je FastAPI potvrdio svoje mjesto kao jedan  od vodećih framework-a.
+	\\ \\
+	Jedna od ključnih značajki FastAPI-ja je još njegova podrška za tipizaciju podataka pomoću Pythonovog tipnog sustava. Što omogućuje definiranje tipova podataka za ulazne i izlazne parametre API-ja, olakšava otkrivanje grešaka i poboljšava sigurnost koda. FastAPI koristi Pydantic biblioteku za validaciju i serializaciju podataka, što također omogućava jednostavno rukovanje podacima u API-ju.
+	\\ \\
+	FastAPI podržava asinkrono izvršavanje, što znači da može obrađivati više zahtjeva istovremeno. To postiže korištenjem uvijek asinkronog I/O-a i uvijek asinkronih biblioteka kao što su uvicorn i asyncio. Ova asinkrona podrška omogućava brže i efikasnije izvršavanje API-ja, posebno u situacijama s velikim opterećenjem.
+	\\ \\
+	Jedna od velikih prednosti FastAPI-ja je automatska generacija dokumentacije API-ja. Na temelju deklarativnih ruta i modela podataka, FastAPI automatski generira interaktivnu dokumentaciju koja opisuje sve dostupne rute, parametre i odgovore API-ja. Ova dokumentacija je dostupna putem web preglednika i omogućava korisnicima jednostavno istraživanje i testiranje API-ja.
+	\\ \\
+	FastAPI također podržava integraciju s različitim bazama podataka kao što su SQLAlchemy, Tortoise-ORM i MongoDB. Također podržava autentikaciju i autorizaciju, što omogućava sigurno upravljanje pristupom API-ju. Također ima ugrađenu podršku za upravljanje CORS-om, što olakšava integraciju s drugim domenama.
+	\\ \\
+	Ukratko, FastAPI je moćan Pythonov framework koji omogućava brzo razvijanje i skaliranje API-ja uz visoku performancu, sigurnost i jednostavnost korištenja. Njegova podrška za tipizaciju podataka, asinkrono izvršavanje i automatsku generaciju dokumentacije čine ga izvrsnim izborom za izgradnju modernih i efikasnih API-ja.
 
 	\bigskip
 
@@ -27,13 +36,13 @@
 	\\ \\
 	Streamlit se ističe svojom sposobnošću stvaranja atraktivnih web aplikacija s minimalnim naporom. U nekoliko redaka koda, korisnici mogu transformirati svoje analize i modele u sučelja koja su intuitivna i lako razumljiva. Ova karakteristika čini Streamlit iznimno korisnim za brze iteracije, testiranje ideja i dijeljenje rezultata sa širom publikom.
 	\\ \\
-	Također, raznolikost widgeta i grafičkih elemenata unutar Streamlita omogućuje korisnicima da prilagode svoje aplikacije prema specifičnim potrebama, čineći ih pristupačnima čak i početnicima u Pythonu. Aktivna zajednica Streamlit korisnika pruža bogatstvo resursa, od korisničkih vodiča do gotovih rješenja, čime olakšava učenje i implementaciju novih funkcionalnosti. Sve ove prednosti čine Streamlit ne samo alatom za brzi razvoj, već i resursom koji promiče laku prilagodbu i inovaciju u svijetu web razvoja.
+	Također, raznolikost widgeta i grafičkih elemenata unutar Streamlita omogućuje korisnicima da prilagode svoje aplikacije prema specifičnim potrebama, čineći ih pristupačnima čak i početnicima u Pythonu. Aktivna zajednica Streamlit korisnika pruža bogatstvo resursa, od korisničkih vodiča do gotovih rješenja, čime olakšava učenje i implementaciju novih funkcionalnosti. Sve ove prednosti čine Streamlit, ne samo alatom za brzi razvoj, već i resursom koji promiče laku prilagodbu i inovaciju u svijetu web razvoja.
 	\\ \\
 	Unatoč tim prednostima, Streamlit nije uvijek najfleksibilniji alat. Njegova snaga leži u jednostavnosti i brzini razvoja, ali to može rezultirati ograničenjima za složenije scenarije ili specifične zahtjeve. Programeri koji traže dublju prilagodbu u dizajnu aplikacija brzo će naići na ograničenja koja neće moći zaobići.
 	\\ \\
 	Dodatno, jedan od izazova je prilagodba pojedinih komponenti i njihovih međusobnih interakcija. Kada se koriste složenije komponente može doći do sukoba i neusklađenosti. Različiti widgeti ili interaktivni elementi stvoreni od strane različitih korisnika mogu imati različite zahtjeve i uvjete, što rezultira kompatibilnošću koja nije uvijek zajamčena.
 	\\ \\
-	Usorkos navedenim izazovima, Streamlit se izdvaja kao iznimno koristan alat za brzi razvoj web aplikacija u Pythonu. Njegova jednostavnost i brzina omogućuju korisnicima transformaciju analiza i modela u privlačna korisnička sučelja s minimalnim naporom, dok bi zahtjevi za visokom prilagodljivošću i složenim interakcijama možda zahtijevali razmatranje drugih alata. Stoga je ključno pažljivo odabrati Streamlit kao alat, uzimajući u obzir karakteristike projekta.
+	Usorkos navedenim izazovima, Streamlit se izdvaja kao iznimno koristan alat za brzi razvoj web aplikacija u Pythonu, dok bi zahtjevi za visokom prilagodljivošću i složenim interakcijama možda zahtijevali razmatranje drugih alata. Stoga je ključno pažljivo odabrati Streamlit kao alat, uzimajući u obzir karakteristike projekta.
 
 	\bigskip
 
@@ -54,16 +63,15 @@
 	\bigskip
 
 	\section{Programski zahtjevi}
-	Neovisno o framework-ovima, aplikacija mora ispunjavati sljedeće programske zahtjeve:
+	Neovisno o framework-ovima, potrebno je spomenuti da je aplikacija je zamišljena da ispunjava sljedeće programske zahtjeve:
 
 		\begin{packed_item}
 
 			\item Sustav nužno mora podržavati rad više korisnika u stvarnom vremenu
-			\item Korisničko sučelje i sustav moraju podržavati hrvatsku abecedu
-			\item Sustav treba biti implementiran kao web aplikacija koristeći objektno-orijentirane jezike
+			\item Sustav treba biti implementiran kao web aplikacija koristeći objektno-orijentirane principe
 			\item Neispravno korištenje korisničkog sučelja ne smije narušiti sustav
 			\item Sustav treba imati jasno i intuitivno sučelje
 			\item Sustavu se može pristupiti iz javne mreže
-			\item Zaporke korisnika ne smiju se zapisivati u bazu u plain text formatu
+			\item Sigurnost sustava i informacija korisnika mora biti zagarantitrana
 
 		\end{packed_item}

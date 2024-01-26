@@ -9,7 +9,7 @@ load_dotenv(dotenv_path=env_path)
 
 
 class Settings:
-    PROJECT_NAME: str = "Picibangos projekt by 2Ficcos 🍑🔥"
+    PROJECT_NAME: str = "UA Neoplanta projekt by 2Ficcos 🍑🔥"
     PROJECT_VERSION: str = "1.0.0"
 
     POSTGRES_USER: str = os.getenv("POSTGRES_USER")

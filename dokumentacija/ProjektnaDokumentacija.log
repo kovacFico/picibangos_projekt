@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  26 JAN 2024 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.1)  26 JAN 2024 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **ProjektnaDokumentacija.tex
 (./ProjektnaDokumentacija.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24>
-(c:/texlive/2022/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(c:/texlive/2022/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -24,23 +24,41 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count194
 \U@D=\dimen139
-\l@unhyphenated=\language87
+\l@unhyphenated=\language3
 
-(c:/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count195
 
-(c:/texlive/2022/texmf-dist/tex/generic/babel-croatian/croatian.ldf
-Language: croatian 2014/03/31 v1.3m Croatian support from the babel system
+
+! Package babel Error: Unknown option 'croatian'. Either you misspelled it
+(babel)                or the language definition file croatian.ldf was not fou
+nd.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.4254 \ProcessOptions*
+
+Valid options are, among others: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 4299.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2022/01/26 3.70 Nil language
+\l@nil=\language4
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup4
@@ -49,24 +67,24 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen140
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen141
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count196
@@ -107,7 +125,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/txfonts/txfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -193,7 +211,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
 LaTeX Info: Redefining \not on input line 1043.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/mathdots/mathdots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/mathdots/mathdots.sty
 Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in ma
 th.
 \MDo@unit=\dimen149
@@ -202,7 +220,7 @@ th.
 \MDopostkern=\muskip18
 \MDodotkern=\muskip19
 )
-(c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box53
 \beforetitleunit=\skip52
@@ -214,7 +232,7 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen153
 \titlewidthfirst=\dimen154
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen155
 \ar@mcellbox=\box54
@@ -224,23 +242,27 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \backup@length=\skip55
 \ar@cellbox=\box55
 )
-(c:/texlive/2022/texmf-dist/tex/latex/lastpage/lastpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count274
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tabularray/tabularray.sty
-(c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-02-24 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/tabularray/tabularray.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader)
 
-(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box56
 ))
-Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
+Package: tabularray 2021-12-01 v2021Q Typeset tabulars and arrays with LaTeX3
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
 \l__tblr_a_int=\count276
 \l__tblr_c_int=\count277
 \l__tblr_r_int=\count278
@@ -278,6 +300,7 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 \l__tblr_key_remainder_int=\count292
 \g__tblr_data_str_value_count_int=\count293
 \rulewidth=\dimen171
+\l__multicolumn_cell_number_int=\count294
 \l__tblr_strut_ht_box=\box61
 \l__tblr_strut_dp_box=\box62
 \g__tblr_cell_wd_dim=\dimen172
@@ -298,11 +321,11 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 \l__tblr_table_middlefoot_box=\box71
 \l__tblr_table_lastfoot_box=\box72
 \l__tblr_remain_height_dim=\dimen179
-\l__tblr_long_from_int=\count294
-\l__tblr_long_to_int=\count295
-\l__tblr_curr_i_int=\count296
-\l__tblr_prev_i_int=\count297
-\l__tblr_table_page_int=\count298
+\l__tblr_long_from_int=\count295
+\l__tblr_long_to_int=\count296
+\l__tblr_curr_i_int=\count297
+\l__tblr_prev_i_int=\count298
+\l__tblr_table_page_int=\count299
 \l__tblr_table_head_box=\box73
 \l__tblr_table_foot_box=\box74
 \l__tblr_table_head_foot_dim=\dimen180
@@ -331,54 +354,54 @@ Package: tabularray 2022-03-01 v2022A Typeset tabulars and arrays with LaTeX3
 \l__tblr_cell_ht_dim=\dimen196
 \l__tblr_diag_box=\box82
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks24
 \minrowclearance=\skip56
 )
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
 
-(c:/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
-(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks25
 \XKV@tempa@toks=\toks26
 
-(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count299
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count300
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
@@ -386,7 +409,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen197
 \Gin@req@width=\dimen198
 )
-(c:/texlive/2022/texmf-dist/tex/latex/collectbox/collectbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box83
 )
@@ -396,7 +419,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@ury=\dimen258
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen259
@@ -408,29 +431,29 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen265
 \adjbox@ptotalheight=\dimen266
 
-(c:/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count300
+\c@checkoddpage=\count301
 )
-(c:/texlive/2022/texmf-dist/tex/latex/varwidth/varwidth.sty
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box84
-\sift@deathcycles=\count301
+\sift@deathcycles=\count302
 \@vwid@loff=\dimen267
 \@vwid@roff=\dimen268
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count302
-\Gm@cntv=\count303
-\c@Gm@tempcnt=\count304
+\Gm@cnth=\count303
+\Gm@cntv=\count304
+\c@Gm@tempcnt=\count305
 \Gm@bindingoffset=\dimen269
 \Gm@wd@mp=\dimen270
 \Gm@odd@mp=\dimen271
@@ -441,17 +464,17 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen276
 \Gm@dimlist=\toks27
 )
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/kpfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2010/08/20 v3.31
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
 )
-\c@mv@rm=\count305
-\c@mv@boldrm=\count306
-\c@mv@sf=\count307
-\c@mv@boldsf=\count308
+\c@mv@rm=\count306
+\c@mv@boldrm=\count307
+\c@mv@sf=\count308
+\c@mv@boldsf=\count309
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 354.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/txr/m/n --> OT1/jkp/m/n on input line 354.
@@ -780,127 +803,131 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
 LaTeX Font Info:    Redeclaring math symbol \n@tch@r on input line 1578.
 LaTeX Info: Redefining \not on input line 1580.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen277
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\Hy@linkcounter=\count310
+\Hy@pagecounter=\count311
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count312
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count312
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count313
 
-(c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4749.
+LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen278
 
-(c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
+\Fld@menulength=\count314
 \Field@Width=\dimen279
 \Fld@charsize=\dimen280
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count315
+\c@Item=\count316
+\c@Hfootnote=\count317
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
 
-(c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -908,7 +935,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 )
-(c:/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip58
@@ -921,15 +948,15 @@ rs
 \f@nch@O@olf=\skip65
 \f@nch@O@orf=\skip66
 )
-(c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count319
+\c@float@type=\count320
 \float@exts=\toks28
 \float@box=\box85
 \@float@everytoks=\toks29
 \@floatcapt=\box86
 )
-(c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 \@float@every@table=\toks30
@@ -937,7 +964,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 40.
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 8
 4.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
 (./ProjektnaDokumentacija.aux (./Opis_projektnog_zadatka.aux)
@@ -948,7 +975,7 @@ LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 84.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 8
 4.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/omljkp.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 84.
@@ -956,7 +983,7 @@ LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 84.
 LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 8
 4.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/omsjkp.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 84.
@@ -970,15 +997,15 @@ LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 84.
 LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 8
 4.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/omxjkp.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 84.
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
+LaTeX Font Info:    Trying to load font information for U+jkpexa on input line
 84.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 84.
@@ -990,25 +1017,25 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 84.
 
-(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
+\scratchcounter=\count321
 \scratchdimen=\dimen281
 \scratchbox=\box87
-\nofMPsegments=\count321
-\nofMParguments=\count322
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count323
+\MPscratchCnt=\count324
 \MPscratchDim=\dimen282
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks32
-) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1019,7 +1046,7 @@ e
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes:
 * h-part:(L,W,R)=(72.26999pt, 435.6108pt, 89.62709pt)
 * v-part:(T,H,B)=(72.26999pt, 671.37021pt, 101.40665pt)
 * \paperwidth=597.50787pt
@@ -1047,16 +1074,16 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 84.
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count326
+\c@section@level=\count327
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -1066,112 +1093,55 @@ LaTeX Info: Redefining \nameref on input line 84.
 \@outlinefile=\write3
 \openout3 = `ProjektnaDokumentacija.out'.
 
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line
 96.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
+LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line
 96.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
 6.
 
-(c:/texlive/2022/texmf-dist/tex/latex/txfonts/ot1txr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
+LaTeX Font Info:    Trying to load font information for U+jkpmia on input line
 96.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line
 96.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
-)
+) [1
 
-LaTeX Warning: Command \v invalid in math mode on input line 96.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.96 			\huge $Pič
-                   ibangoš$ $sastančenje$\\
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 96.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.96 			\huge $Pičibangoš
-                           $ $sastančenje$\\
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 96.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.96 			\huge $Pičibangoš$ $sastanč
-                                      enje$\\
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-[1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./ProjektnaDokumentacija.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./ProjektnaDokumentacija.
+toc)
 \tf@toc=\write4
 \openout4 = `ProjektnaDokumentacija.toc'.
 
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 118.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.118 	\include{Opis_projektnog_zadatka}
-                                        
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 118.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.118 	\include{Opis_projektnog_zadatka}
-                                        
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
-<to be read again> 
-                   \relax 
+<to be read again>
+                   \relax
 l.118 	\include{Opis_projektnog_zadatka}
                                          [1
 
@@ -1179,10 +1149,22 @@ l.118 	\include{Opis_projektnog_zadatka}
 \openout2 = `Opis_projektnog_zadatka.aux'.
 
  (./Opis_projektnog_zadatka.tex
-Poglavlje 1.
+Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
+ []
+
+
+Overfull \hbox (4.74246pt too wide) in paragraph at lines 3--7
+\OT1/jkp/m/n/12 Osnova projekta je bilo razviti programsku podr[]sku za \OT1/jk
+p/m/it/12 UA Neoplanta\OT1/jkp/m/n/12 , web aplikaciju
+ []
+
+
+Overfull \hbox (22.07118pt too wide) in paragraph at lines 3--7
+\OT1/jkp/m/n/12 koja predstavlja online planer i nudi korisnicima opcije ugovar
+anja sastanaka, stvaranja
  []
 
 
@@ -1197,43 +1179,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
 LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 1
 2.
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
 )
+Overfull \hbox (6.15552pt too wide) in paragraph at lines 12--13
+[]\OT1/jkp/m/n/12 Istra[]ziti mogu[]cnosti razvoja programske potpore za web po
+mo[]cu programskog
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 
 Overfull \hbox (0.20488pt too wide) in paragraph at lines 20--24
-\OT1/jkp/m/n/12 Python je je-dan od naj-po-pu-lar-ni-jih i naju[]cinkovitijih p
-ro-gram-skih je-zika koji sadr[]zi
+\OT1/jkp/m/n/12 Python je jedan od najpopularnijih i naju[]cinkovitijih program
+skih jezika koji sadr[]zi
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 24.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.24 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (0.56488pt too wide) in paragraph at lines 20--24
+\OT1/jkp/m/n/12 framowork-i automatiziraju implementaciju mnogih zadataka i daj
+u programerima
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 24.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.24 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (5.15685pt too wide) in paragraph at lines 20--24
+\OT1/jkp/m/n/12 dobru strukturu za razvoj aplikacija. Svaki framowork dolazi s
+vlastitom kolekcijom
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1244,34 +1222,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--35
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
 
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 35.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.35 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 35.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.35 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1279,59 +1235,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
+Overfull \hbox (10.64726pt too wide) in paragraph at lines 37--41
+\OT1/jkp/m/n/12 kolega s kojima je povezan ili kao prijatelj ili preko tima, te
+ tako mo[]ze lak[]se upravljati
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--44
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
+Underfull \hbox (badness 10000) in paragraph at lines 42--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
+Underfull \hbox (badness 10000) in paragraph at lines 42--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
+Underfull \hbox (badness 10000) in paragraph at lines 42--50
 
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 53.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.53 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (9.67523pt too wide) in paragraph at lines 42--50
+[]\OT1/jkp/m/n/12 ce se spomenuti doga[]daj odvijati i sudionike koje poziva na
+ doga[]daj, bilo pojedina[]cno
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 53.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.53 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1339,34 +1285,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 58.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.58 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (6.09924pt too wide) in paragraph at lines 51--55
+\OT1/jkp/m/n/12 Na taj na[]cin korisnici postaju prijatelji, te mogu stvarati i
+ gledati zajedni[]cke obaveze,
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 58.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.58 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1377,91 +1307,87 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout2 = `Specifikacija_programske_potpore.aux'.
 
  (./Specifikacija_programske_potpore.tex
-Poglavlje 2.
+Chapter 2.
+
+Overfull \hbox (7.34167pt too wide) in paragraph at lines 2--6
+[]\OT1/jkp/m/n/12 Python framework je zbirka Python modula koja pru[]za skup za
+jedni[]ckih funkcija
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
 
-Overfull \hbox (19.2152pt too wide) in paragraph at lines 19--21
-\OT1/jkp/m/n/12 Upravo radi na-ve-de-nih raz-loga, Fas-tApi je pos-tao naj-bo-l
-ji oda-bir za iz-grad-nju backend-
+Overfull \hbox (36.33514pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 svoje jednostavne upotrebe, koja je omogu[]cila korisnicima brz
+ proces u[]cenja. Posljedni[]cno
  []
 
 
-Overfull \hbox (0.26079pt too wide) in paragraph at lines 26--37
-\OT1/jkp/m/n/12 sfor-mi-rati pro-jekte u upe[]catljive web apli-ka-cije. Ovaj o
-k-vir po-sebno privla[]ci znans-
+Overfull \hbox (2.48726pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 time je ostvarila i lak[]si proces kreiranja proizvoda i funkci
+onalnosti, []cime je FastAPI
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 19--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Overfull \hbox (6.17119pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 ulazne i izlazne parametre API-ja, olak[]sava otkrivanje gre[]s
+aka i pobolj[]sava sigurnost
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--30
 
  []
 
 
-Overfull \hbox (11.22322pt too wide) in paragraph at lines 26--37
-\OT1/jkp/m/n/12 le[]zi u jed-nos-tav-nosti i br-zini ra-zvoja, ali to mo[]ze re
--zul-ti-rati ograni[]cenjima za slo[]zenije
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 19--30
 
  []
 
 
-Overfull \hbox (15.25523pt too wide) in paragraph at lines 26--37
-\OT1/jkp/m/n/12 Dodatno, je-dan od iz-a-zova je pri-la-godba po-je-di-nih kom-p
-o-nenti i nji-ho-vih me[]dusobnih
+Overfull \hbox (32.3848pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 API-ja. Ova dokumentacija je dostupna putem web preglednika i o
+mogu[]cava korisnicima
  []
 
 
-Overfull \hbox (27.45274pt too wide) in paragraph at lines 26--37
-\OT1/jkp/m/n/12 in-te-rak-cija. Kada se ko-riste slo[]zenije kom-po-nente mo[]z
-e do[]ci do su-koba i neuskla[]denosti.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
+Underfull \hbox (badness 10000) in paragraph at lines 19--30
 
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 37.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.37 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (23.49847pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 SQLAlchemy, Tortoise-ORM i MongoDB. Tako[]der podr[]zava autent
+ikaciju i autorizaciju,
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 37.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.37 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (16.02875pt too wide) in paragraph at lines 19--30
+[]\OT1/jkp/m/n/12 sto omogu[]cava sigurno upravljanje pristupom API-ju. Tako[]d
+er ima ugra[]denu podr[]sku
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Underfull \hbox (badness 10000) in paragraph at lines 19--30
+
+ []
+
+
+Overfull \hbox (19.59921pt too wide) in paragraph at lines 19--30
+\OT1/jkp/m/n/12 Njegova podr[]ska za tipizaciju podataka, asinkrono izvr[]savan
+je i automatsku generaciju
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1474,78 +1400,68 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Overfull \hbox (4.10487pt too wide) in paragraph at lines 42--53
-\OT1/jkp/m/n/12 snage Pyt-hona kako bi omogu[]cio ra-zvoj apli-ka-cija s iz-vor
--nim ko-risni[]ckim su[]celjima,
+Overfull \hbox (41.98161pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 Streamlit, kao otvoreni Python framework, predstavlja sna[]zan
+alat koji mo[]ze transformirati
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 35--46
 
  []
 
 
-Overfull \hbox (11.36961pt too wide) in paragraph at lines 42--53
-\OT1/jkp/m/n/12 Prvo, Be-eWare pru[]za alate za uni-ver-zal-nost, omogu[]cavaju
-[]ci rad Pyt-hona na razli[]citim
+Overfull \hbox (32.2688pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 Streamlit se isti[]ce svojom sposobno[]s[]cu stvaranja atraktiv
+nih web aplikacija s minimalnim
  []
 
 
-Overfull \hbox (10.89919pt too wide) in paragraph at lines 42--53
-\OT1/jkp/m/n/12 pro-jekt nudi alate za pa-ki-ra-nje Pyt-hon pro-je-kata, po-jed
--nos-tav-ljuju[]ci pro-ces izvo[]denja
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 35--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 35--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Overfull \hbox (11.22322pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 le[]zi u jednostavnosti i brzini razvoja, ali to mo[]ze rezulti
+rati ograni[]cenjima za slo[]zenije
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--46
 
  []
 
 
-Overfull \hbox (19.3352pt too wide) in paragraph at lines 42--53
-\OT1/jkp/m/n/12 most izme[]du Pyt-hona i iz-vor-nih ko-risni[]ckih su[]celja, p
-os-tav-ljaju[]ci te-me-lje za budu[]cnost
+Overfull \hbox (15.25523pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 Dodatno, jedan od izazova je prilagodba pojedinih komponenti i
+njihovih me[]dusobnih
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 53.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.53 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Overfull \hbox (27.45274pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 interakcija. Kada se koriste slo[]zenije komponente mo[]ze do[]
+ci do sukoba i neuskla[]denosti.
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 53.
+Underfull \hbox (badness 10000) in paragraph at lines 35--46
 
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.53 
-     
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Overfull \hbox (3.95683pt too wide) in paragraph at lines 35--46
+\OT1/jkp/m/n/12 slo[]zenim interakcijama mo[]zda zahtijevali razmatranje drugih
+ alata. Stoga je klju[]cno
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1553,35 +1469,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-Overfull \hbox (3.14719pt too wide) in paragraph at lines 57--58
-\OT1/jkp/m/n/12 Neovisno o framework-ovima, apli-ka-cija mora is-pu-nja-vati sl
-jede[]ce pro-gram-ske zah-
+Overfull \hbox (4.10487pt too wide) in paragraph at lines 51--62
+\OT1/jkp/m/n/12 snage Pythona kako bi omogu[]cio razvoj aplikacija s izvornim k
+orisni[]ckim su[]celjima,
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 61.
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.61 			\item S
-               ustav nužno mora podržavati rad više korisnika u stvarnom ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+ []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 61.
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
 
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.61 			\item S
-               ustav nužno mora podržavati rad više korisnika u stvarnom ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Overfull \hbox (11.36961pt too wide) in paragraph at lines 51--62
+\OT1/jkp/m/n/12 Prvo, BeeWare pru[]za alate za univerzalnost, omogu[]cavaju[]ci
+ rad Pythona na razli[]citim
+ []
+
+
+Overfull \hbox (10.89919pt too wide) in paragraph at lines 51--62
+\OT1/jkp/m/n/12 projekt nudi alate za pakiranje Python projekata, pojednostavlj
+uju[]ci proces izvo[]denja
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
+
+ []
+
+
+Overfull \hbox (27.79282pt too wide) in paragraph at lines 51--62
+\OT1/jkp/m/n/12 izvornim korisni[]ckim su[]celjem zahtijeva pristup specifi[]cn
+im widgetima i mogu[]cnostima
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--62
+
+ []
+
+
+Overfull \hbox (19.3352pt too wide) in paragraph at lines 51--62
+\OT1/jkp/m/n/12 most izme[]du Pythona i izvornih korisni[]ckih su[]celja, posta
+vljaju[]ci temelje za budu[]cnost
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1589,36 +1532,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Overfull \hbox (23.0035pt too wide) in paragraph at lines 63--64
-[]\OT1/jkp/m/n/12 Sustav treba biti im-ple-men-ti-ran kao web apli-ka-cija ko-r
-iste[]ci objektno-orijentirane
+Overfull \hbox (23.0035pt too wide) in paragraph at lines 71--72
+[]\OT1/jkp/m/n/12 Sustav treba biti implementiran kao web aplikacija koriste[]c
+i objektno-orijentirane
  []
 
 )
 
-LaTeX Warning: Command \v invalid in math mode on input line 119.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.119 	\include{Specifikacija_programske_potpore}
-                                                 
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 119.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.119 	\include{Specifikacija_programske_potpore}
-                                                 
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1629,15 +1550,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout2 = `Zakljucak.aux'.
 
  (./Zakljucak.tex
-Poglavlje 3.
+Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
 
+Overfull \hbox (34.56802pt too wide) in paragraph at lines 3--14
+\OT1/jkp/m/n/12 FastAPI se istaknuo kao odli[]can framework za sastavljanje tem
+elja aplikacije. Jednostavan
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
+ []
+
+
+Overfull \hbox (7.84726pt too wide) in paragraph at lines 3--14
+\OT1/jkp/m/n/12 mobilnih, web i stolnih aplikacija koriste[]ci Python. Isti[]ce
+ se time []sto nudi mogu[]cnost
+ []
+
+
+Overfull \hbox (9.74486pt too wide) in paragraph at lines 3--14
+\OT1/jkp/m/n/12 zajednicom koja mu je posve[]cena jasno isti[]ce kao bolji odab
+ir za rad na web aplikaciji.
  []
 
 
@@ -1647,8 +1586,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
 
 Overfull \hbox (14.37285pt too wide) in paragraph at lines 3--14
-\OT1/jkp/m/n/12 Streamlit se po-ka-zao kao iz-nimno spo-so-ban alat za stva-ra-
-nje web apli-ka-cija. Prakti[]can
+\OT1/jkp/m/n/12 Streamlit se pokazao kao iznimno sposoban alat za stvaranje web
+ aplikacija. Prakti[]can
  []
 
 
@@ -1657,34 +1596,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--14
  []
 
 
+Overfull \hbox (26.59525pt too wide) in paragraph at lines 3--14
+\OT1/jkp/m/n/12 mnogi kreirani od razli[]citih korisnika, pa njihova kvaliteta
+ovisi o vje[]stini programiranja
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 14.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.14 		
-       
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 14.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.14 		
-       
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1698,29 +1621,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-LaTeX Warning: Command \v invalid in math mode on input line 15.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.15 		 \eject
-              
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 15.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.15 		 \eject
-              
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1734,39 +1635,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
  8.
 
-(c:/texlive/2022/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
 )
 Overfull \hbox (8.89293pt too wide) in paragraph at lines 8--9
-[]\OT1/jkp/m/n/12 Programsko in[]zenjerstvo, FER ZE-MRIS, [][]$\OT1/jkptt/m/n/1
-2 http : / / www . fer . hr / predmet / proinz$[][] 
+[]\OT1/jkp/m/n/12 Programsko in[]zenjerstvo, FER ZEMRIS, [][]$\OT1/jkptt/m/n/12
+ http : / / www . fer . hr / predmet / proinz$[][]
  []
 
 )
 
-LaTeX Warning: Command \v invalid in math mode on input line 121.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.121 	\include{Literatura}
-                           
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-LaTeX Warning: Command \v invalid in math mode on input line 121.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.121 	\include{Literatura}
-                           
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
+Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
@@ -1778,31 +1657,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-] 
+]
 AED: lastpage setting LastPage
 (./ProjektnaDokumentacija.aux (./Opis_projektnog_zadatka.aux)
 (./Specifikacija_programske_potpore.aux) (./Zakljucak.aux) (./Literatura.aux))
 Package rerunfilecheck Info: File `ProjektnaDokumentacija.out' has not changed.
 
 (rerunfilecheck)             Checksum: 073721C8070EC447AFA24ACA15829D67;1229.
- ) 
+ )
 Here is how much of TeX's memory you used:
- 16399 strings out of 478268
- 273896 string characters out of 5850344
- 575017 words of memory out of 5000000
- 34282 multiletter control sequences out of 15000+600000
- 505098 words of font info for 108 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 84i,14n,90p,780b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
-f-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2022/texmf-dist/fonts
-/type1/public/kpfonts/jkpmi.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-kpfonts/jkpmit8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkp
-mn8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on ProjektnaDokumentacija.pdf (13 pages, 75660 bytes).
+ 16414 strings out of 480247
+ 274370 string characters out of 5896152
+ 565071 words of memory out of 5000000
+ 34027 multiletter control sequences out of 15000+600000
+ 504327 words of font info for 106 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,12n,90p,786b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/kpfonts/jkpmit8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfon
+ts/jkpttmn8a.pfb>
+Output written on ProjektnaDokumentacija.pdf (13 pages, 76190 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  141 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
-

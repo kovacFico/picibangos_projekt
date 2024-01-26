@@ -1,9 +1,9 @@
-\babel@toc {croatian}{}\relax 
+\babel@toc {nil}{}\relax
 \contentsline {chapter}{\numberline {1}Opis projektnog zadatka}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Opis aplikacije}{4}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Specifikacija programske potpore}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}FastAPI}{6}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Streamlit}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Streamlit}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}BeeWare}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Programski zahtjevi}{9}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Zaključak i budući rad}{10}{chapter.3}%
