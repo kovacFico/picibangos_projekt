@@ -1,5 +1,5 @@
 \chapter{Specifikacija programske potpore}
-	Python framework zbirka je Python modula koja pruža skup zajedničkih funkcija koje se mogu koristiti kao struktura za izgradnju aplikacija bilo koje vrste.\\
+	Python framework je zbirka Python modula koja pruža skup zajedničkih funkcija koje se mogu koristiti kao struktura za izgradnju aplikacija bilo koje vrste.\\
 	Framework-ovi su osmišljeni kako bi pojednostavili razvojni proces dajući općenite smjernice o tome kako bismo trebali graditi softver i apstrahirali neke od složenijih ili ponavljajućih zadataka, što stoga omogućuje jedinstvenu i prilagođenu logiku za aplikacije.\\
 	\\
 	Stoga, nakon istraživanja, odlučili smo koristiti navedene Python framework-e u izgradnji aplikacije:
@@ -16,13 +16,36 @@
 
 	\section{FastAPI}
 
+	FastAPI je moderan web framework koji je kreirao Sebastián Ramírez za izgradnju RESTful API-ja u Pythonu. Ubrzo je stekao popularnost među programerima zbog svoje jednostavne upotrebe, brzine koja je usporediva sa NodeJS-om i Go-om, i robusnosti. Temelj se zasniva na Pydantic-u, te omogućuje validaciju, serijalizaciju i deserijalizaciju podataka. Također automatski generira OpenAPI dokumentaciju za API-je izgrađene s njim.\\
+	Upravo radi navedenih razloga, FastApi je postao najbolji odabir za izgradnju backend-a aplikacije.
+
+	\bigskip
+
 	\section{Streamlit}
+
+	Streamlit je Python framework otvorenog koda koja može lako pretvoriti projekte iz podatkovne znanosti i strojnog učenja u web aplikacije. To je izvrstan odabir za znanstvenike koji se bave podacima ili inženjere strojnog učenja čiji su temeljni skupovi vještina usmjereni na izradu prototipova, eksperimentiranje s modelima i manipuliranje podacima u Pythonu. Streamlit stoga omogućuje stvaranje aplikacije zapanjujućeg izgleda u nekoliko redaka koda, no unatoč navedenim prednostima tu su naravno poneki nedostatci. Najveći utjecaj je imao manjak fleksibilnosti Stramlit-ovih opcija koje su u nekim slučajevima znale otežati razvoj i najjednostvanijih funkcionalnosti.....FILIPE POSERI SE TU
+
+	\bigskip
 
 	\section{BeeWare}
 
-	\pagebreak
+	Python se pokazao kao vrlo sposoban jezik - pristupačan za početnike, ali moćan u rukama stručnjaka. Projekt BeeWare ima za cilj iskoristiti snagu Pythona kao jezika i koristiti ga kako bi korisnicima svih razina vještina omogućio razvoj aplikacija s izvornim korisničkim sučeljima.
 
-	\section{Ostali zahtjevi}
+	Krajnji cilj projekta BeeWare: biti u mogućnosti učiniti za mobilni i stolni korisnički softver isto što je Django napravio za web softver - dati u ruke korisnicima skup alata i biblioteka koji im omogućuju razvoj bogata izvorna korisnička sučelja i implementirati ih na svoje uređaje. Ovo uključuje:
+
+	Alati za omogućavanje rada Pythona na različitim uređajima,
+	Alati za pakiranje Python projekta tako da se može izvoditi na tim uređajima,
+	Knjižnice za pristup izvornim widgetima i mogućnostima uređaja,
+	Alati koji pomažu u razvoju, otklanjanju pogrešaka, analizi i implementaciji ovih projekata.
+
+	Cilj je da ovaj set alata bude dovoljno jednostavan za korištenje za potpune pridošlice za korištenje u okruženju sličnom Django Girls; ali dovoljno moćni da se mogu koristiti za pokretanje sljedećeg Instagrama, Pinteresta ili Disqusa.
+
+	No, ne bavimo se samo softverom. Također nam je cilj biti projekt s društvenom sviješću. Cilj nam je razviti i održati raznoliku i inkluzivnu zajednicu i imamo Kodeks ponašanja koji se rigorozno provodi. Također težimo razvoju zdrave i održive zajednice - one koja je svjesna problema mentalnog zdravlja svojih sudionika i koja osigurava resurse za ljude da se počnu angažirati i nastave surađivati sa zajednicom.
+
+	\bigskip
+
+	\section{Programski zahtjevi}
+	Neovisno o framework-ovima, aplikacija mora ispunjavati sljedeće programske zahtjeve:
 
 		\begin{packed_item}
 
@@ -33,7 +56,5 @@
 			\item Sustav treba imati jasno i intuitivno sučelje
 			\item Sustavu se može pristupiti iz javne mreže
 			\item Zaporke korisnika ne smiju se zapisivati u bazu u plain text formatu
-			\item Mora se provjeravati ispravnost kartografova IBAN-a
-			\item Kartografu se najkraća ruta do lokacije koju želi provjeriti mora vratiti preko OSRM servisa
 
 		\end{packed_item}
