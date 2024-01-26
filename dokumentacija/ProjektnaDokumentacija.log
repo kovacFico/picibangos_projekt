@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  26 JAN 2024 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  26 JAN 2024 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1390,23 +1390,72 @@ ji oda-bir za iz-grad-nju backend-
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 27.
+Overfull \hbox (0.26079pt too wide) in paragraph at lines 26--37
+\OT1/jkp/m/n/12 sfor-mi-rati pro-jekte u upe[]catljive web apli-ka-cije. Ovaj o
+k-vir po-sebno privla[]ci znans-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
+
+ []
+
+
+Overfull \hbox (11.22322pt too wide) in paragraph at lines 26--37
+\OT1/jkp/m/n/12 le[]zi u jed-nos-tav-nosti i br-zini ra-zvoja, ali to mo[]ze re
+-zul-ti-rati ograni[]cenjima za slo[]zenije
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
+
+ []
+
+
+Overfull \hbox (15.25523pt too wide) in paragraph at lines 26--37
+\OT1/jkp/m/n/12 Dodatno, je-dan od iz-a-zova je pri-la-godba po-je-di-nih kom-p
+o-nenti i nji-ho-vih me[]dusobnih
+ []
+
+
+Overfull \hbox (27.45274pt too wide) in paragraph at lines 26--37
+\OT1/jkp/m/n/12 in-te-rak-cija. Kada se ko-riste slo[]zenije kom-po-nente mo[]z
+e do[]ci do su-koba i neuskla[]denosti.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--37
+
+ []
+
+
+LaTeX Warning: Command \v invalid in math mode on input line 37.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.27 
+l.37 
      
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 27.
+LaTeX Warning: Command \v invalid in math mode on input line 37.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.27 
+l.37 
      
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1425,30 +1474,73 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Overfull \hbox (3.14719pt too wide) in paragraph at lines 48--49
-\OT1/jkp/m/n/12 Neovisno o framework-ovima, apli-ka-cija mora is-pu-nja-vati sl
-jede[]ce pro-gram-ske zah-
+Overfull \hbox (4.10487pt too wide) in paragraph at lines 42--53
+\OT1/jkp/m/n/12 snage Pyt-hona kako bi omogu[]cio ra-zvoj apli-ka-cija s iz-vor
+-nim ko-risni[]ckim su[]celjima,
  []
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 52.
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Overfull \hbox (11.36961pt too wide) in paragraph at lines 42--53
+\OT1/jkp/m/n/12 Prvo, Be-eWare pru[]za alate za uni-ver-zal-nost, omogu[]cavaju
+[]ci rad Pyt-hona na razli[]citim
+ []
+
+
+Overfull \hbox (10.89919pt too wide) in paragraph at lines 42--53
+\OT1/jkp/m/n/12 pro-jekt nudi alate za pa-ki-ra-nje Pyt-hon pro-je-kata, po-jed
+-nos-tav-ljuju[]ci pro-ces izvo[]denja
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Overfull \hbox (19.3352pt too wide) in paragraph at lines 42--53
+\OT1/jkp/m/n/12 most izme[]du Pyt-hona i iz-vor-nih ko-risni[]ckih su[]celja, p
+os-tav-ljaju[]ci te-me-lje za budu[]cnost
+ []
+
+
+LaTeX Warning: Command \v invalid in math mode on input line 53.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.52 			\item S
-               ustav nužno mora podržavati rad više korisnika u stvarnom ...
+l.53 
+     
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Command \v invalid in math mode on input line 52.
+LaTeX Warning: Command \v invalid in math mode on input line 53.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.52 			\item S
-               ustav nužno mora podržavati rad više korisnika u stvarnom ...
+l.53 
+     
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
@@ -1461,7 +1553,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-Overfull \hbox (23.0035pt too wide) in paragraph at lines 54--55
+Overfull \hbox (3.14719pt too wide) in paragraph at lines 57--58
+\OT1/jkp/m/n/12 Neovisno o framework-ovima, apli-ka-cija mora is-pu-nja-vati sl
+jede[]ce pro-gram-ske zah-
+ []
+
+
+LaTeX Warning: Command \v invalid in math mode on input line 61.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.61 			\item S
+               ustav nužno mora podržavati rad više korisnika u stvarnom ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \v invalid in math mode on input line 61.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.61 			\item S
+               ustav nužno mora podržavati rad više korisnika u stvarnom ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+Overfull \hbox (23.0035pt too wide) in paragraph at lines 63--64
 []\OT1/jkp/m/n/12 Sustav treba biti im-ple-men-ti-ran kao web apli-ka-cija ko-r
 iste[]ci objektno-orijentirane
  []
@@ -1497,7 +1625,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
+[9]
 \openout2 = `Zakljucak.aux'.
 
  (./Zakljucak.tex
@@ -1563,7 +1691,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9
+[10
 
 
 
@@ -1599,7 +1727,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10])
+[11])
 \openout2 = `Literatura.aux'.
 
  (./Literatura.tex
@@ -1645,7 +1773,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11
+[12
 
 
 
@@ -1659,22 +1787,22 @@ Package rerunfilecheck Info: File `ProjektnaDokumentacija.out' has not changed.
 (rerunfilecheck)             Checksum: 073721C8070EC447AFA24ACA15829D67;1229.
  ) 
 Here is how much of TeX's memory you used:
- 16398 strings out of 478268
- 273889 string characters out of 5850344
- 571016 words of memory out of 5000000
+ 16399 strings out of 478268
+ 273896 string characters out of 5850344
+ 575017 words of memory out of 5000000
  34282 multiletter control sequences out of 15000+600000
  505098 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,90p,798b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,90p,780b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texm
 f-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2022/texmf-dist/fonts
 /type1/public/kpfonts/jkpmi.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
 kpfonts/jkpmit8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkp
 mn8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on ProjektnaDokumentacija.pdf (12 pages, 73109 bytes).
+Output written on ProjektnaDokumentacija.pdf (13 pages, 75660 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
